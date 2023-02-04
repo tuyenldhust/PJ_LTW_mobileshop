@@ -1,0 +1,37 @@
+footer {
+    background-color: #312525;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer-info {
+    font-size: 14px;
+    text-align: left;
+    color: #25e0a1;
+}
+
+.footer-info p {
+    padding: 5px 0;
+}
+
+.social-icons a {
+    color: #faf4f4;
+    margin-right: 10px;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.social-icons a:hover{
+    color: #9be6cd;
+}
+.copyright {
+    text-align: right;
+}
