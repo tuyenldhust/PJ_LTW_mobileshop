@@ -1,0 +1,52 @@
+.custom-container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.custom-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.custom-col {
+    flex-basis: 0;
+    flex-grow: 1;
+    max-width: 100%;
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.custom-card {
+    background-color: #fff;
+    border-radius: .25rem;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,.15);
+    margin-bottom: 2rem;
+    overflow: hidden;
+}
+
+.custom-header {
+    background-color: #007bff;
+    color: #fff;
+    font-size: 1.25rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+.custom-body {
+    padding: 1rem;
+    text-align: center;
+}
+
+.custom-alert {
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+    color: #155724;
+    padding: .75rem 1.25rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+}

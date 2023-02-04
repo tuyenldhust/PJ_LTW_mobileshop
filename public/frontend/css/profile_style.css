@@ -1,0 +1,125 @@
+.navbar-div{
+    display: flex;
+    align-items: center;
+    height: 50px;
+    background-color: #ffc107;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    border-top: 1px solid #333;
+}
+
+h6 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #333;
+    margin: 0;
+}
+
+.link_nav {
+    color: #333;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+.container {
+    width: 80%;
+    margin-top: 50px;
+}
+
+.card-header h4 {
+    margin-right: 10px;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    color: #fff;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    float: right;
+}
+
+a.btn-primary:hover {
+    background-color: #8daff1;
+}
+
+.card-header a{
+    float: right;
+}
+
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.card-header h4 {
+    font-size: 20px;
+    color: #333;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 60px auto;
+    max-width: 80%;
+}
+
+.card-header {
+    background-color: #f1f1f1;
+    padding: 20px;
+}
+
+.card-header h4 {
+    margin: 0;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.user_field {
+    background-color: #f1f1f1;
+    border: none;
+    padding: 10px;
+    box-sizing: border-box;
+    width: 100%;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.row-table {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-table {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 0 10px;
+    margin-bottom: 2px;
+}
+
+.submit-btn {
+    margin: 2px auto;
+}
+
+.submit-btn button{
+    background-color: #336bba;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 10px auto;
+
+}
+
+.submit-btn button:hover{
+    background-color: #97a0ac;
+    cursor: pointer;
+}
