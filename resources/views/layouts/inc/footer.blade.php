@@ -1,5 +1,5 @@
 <footer>
-    <div class="container">
+    <div class="footer-container">
         <div class="footer-info">
             <p>Contact me:</p>
             <p>So 1, Dai Co Viet, Hai Ba Trung</p>
