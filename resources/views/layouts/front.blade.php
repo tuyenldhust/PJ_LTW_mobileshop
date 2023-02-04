@@ -21,9 +21,7 @@
     <link href="{{ asset('frontend/css/index_home.css') }}" rel="stylesheet">
     <link href="{{ asset('frontend/css/fontnav_style.css') }}" rel="stylesheet">
     <link href="{{ asset('frontend/css/profile_style.css') }}" rel="stylesheet">
-    <link href="{{ asset('frontend/css/fontnav_style.css') }}" rel="stylesheet">
-
-
+    <link href="{{ asset('frontend/css/footer.css') }}" rel="stylesheet">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -53,7 +51,7 @@
     </a>
 </div>
 
-<script src="{{ asset('frontend/js/custom.js')}}"></script>
+
 
 <!--Start of Tawk.to Script-->
 <script type="text/javascript">
@@ -69,6 +67,9 @@
         s0.parentNode.insertBefore(s1, s0);
     })();
 </script>
+
+<script src="{{ asset('frontend/js/custom.js')}}"></script>
+
 <!--End of Tawk.to Script-->
 
 <script>
@@ -97,7 +98,7 @@
 @endif
 <script src="https://kit.fontawesome.com/f1f646c5e0.js" crossorigin="anonymous"></script>
 @yield('scripts')
-
+@include('layouts.inc.footer')
 </body>
 
 </html>
