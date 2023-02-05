@@ -12,7 +12,7 @@
                     Home
                 </a> /
                 <a>
-                    Product
+                    My Orders
                 </a>
             </h6>
         </div>
