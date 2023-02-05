@@ -1,0 +1,55 @@
+.card {
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+    transition: 0.3s;
+    border-radius: 5px;
+    border: 1px solid #333;
+    width: 95%;
+    margin: 120px auto 50px;
+}
+
+.card-header {
+    background-color: #0f9d2b;
+    color: #fff;
+    padding: 20px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+table, th, td {
+    border: 1px solid #2a2929;
+    border-collapse: collapse;
+    height: 70px;
+}
+
+.cate-image {
+    width: 50px;
+    height: 50px;
+}
+
+.cate-btn {
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.btn-primary {
+    background-color: blue;
+    color: #fff;
+}
+
+.btn-danger {
+    background-color: red;
+    color: #fff;
+}
+
+
+.btn-group {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
