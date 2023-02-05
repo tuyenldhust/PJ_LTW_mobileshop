@@ -23,6 +23,9 @@
     <link href="{{ asset('frontend/css/profile_style.css') }}" rel="stylesheet">
     <link href="{{ asset('frontend/css/footer.css') }}" rel="stylesheet">
 
+    {{--  fetch api  --}}
+    <script src="{{ asset('frontend/js/fetch_api.js')}}"></script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
