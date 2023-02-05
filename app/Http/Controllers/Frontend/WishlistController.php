@@ -7,7 +7,6 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Models\Product;
 use Illuminate\Support\Facades\Auth;
-use LDAP\Result;
 
 class WishlistController extends Controller
 {
@@ -30,7 +29,7 @@ class WishlistController extends Controller
                 return response()->json(['status' => "Product Added to Wishlist"]);
             }
             else {
-                return response()->json(['status' => "Product doesnot exists"]);
+                return response()->json(['status' => "Product does not exists"]);
             }
         }
         else {

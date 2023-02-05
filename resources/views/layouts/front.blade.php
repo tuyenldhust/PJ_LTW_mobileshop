@@ -25,12 +25,6 @@
     <link href="{{ asset('frontend/css/order_index.css') }}" rel="stylesheet">
     <link href="{{ asset('frontend/css/view-order-detail.css') }}" rel="stylesheet">
 
-
-
-
-    {{--  fetch api  --}}
-    <script src="{{ asset('frontend/js/fetch_api.js')}}"></script>
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
@@ -54,7 +48,6 @@
 </div>
 
 <div class="whatapp-chat">
-    <a href="https://wa.me/xxx?text=I'm%20interested%20in%20your%20car%20for%20sale" target="_blank">
         <img src="{{ asset('assets/images/test.png') }}" alt="whatapp-logo" heigth="60px" width="60px">
     </a>
 </div>
@@ -62,7 +55,7 @@
 
 
 <!--Start of Tawk.to Script-->
-<script type="text/javascript">
+<!-- <script type="text/javascript">
     var Tawk_API = Tawk_API || {},
         Tawk_LoadStart = new Date();
     (function() {
@@ -74,26 +67,30 @@
         s1.setAttribute('crossorigin', '*');
         s0.parentNode.insertBefore(s1, s0);
     })();
-</script>
-
-<script src="{{ asset('frontend/js/custom.js')}}"></script>
-
+</script> -->
 <!--End of Tawk.to Script-->
 
 <script>
     var availableTags = [];
-    $.ajax({
-        method: "GET",
-        url: "/product-list",
-        success: function(response) {
-            console.log(response);
-            startAutoComplete(response);
-        }
-    });
+
+    fetch('/product-list')
+        .then(response => response.json())
+        .then(data => {
+            console.log(data);
+            startAutoComplete(data);
+        });
 
     function startAutoComplete(availableTags) {
-        $("#search_product").autocomplete({
-            source: availableTags
+        const searchProduct = document.getElementById("search_product");
+        searchProduct.setAttribute("autocomplete", "off");
+
+        const source = [];
+        searchProduct.addEventListener("input", function() {
+            const searchValue = this.value;
+            const suggestions = availableTags.filter(function(tag) {
+                return tag.toLowerCase().indexOf(searchValue.toLowerCase()) > -1;
+            });
+            console.log(suggestions);
         });
     }
 </script>
@@ -106,6 +103,9 @@
 @endif
 <script src="https://kit.fontawesome.com/f1f646c5e0.js" crossorigin="anonymous"></script>
 @yield('scripts')
+
+<script src="{{ asset('frontend/js/custom.js')}}"></script>
+
 @include('layouts.inc.footer')
 </body>
 
