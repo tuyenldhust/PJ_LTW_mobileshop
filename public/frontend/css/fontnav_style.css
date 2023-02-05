@@ -17,9 +17,32 @@
     left: 0;
 }
 
+@media (max-width:800px) {
+
+    .navbarNav {
+        display: none !important
+    }
+}
+
+@media (min-width:800px) {
+    .menu_onclick {
+        display: none;
+    }
+}
+
+.menu_onclick {
+    position: absolute;
+    right: 20px !important;
+    top: 20px !important;
+    font-size: 18px;
+}
+.fa-bars {
+    color: white;
+}
 .container {
     width: 100%;
     display: flex;
+    width: 100%;
 }
 
 .navbar .navbar-brand {
@@ -108,6 +131,15 @@ a.nav-link {
     color: antiquewhite;
 }
 
+a {
+    background-color: transparent
+}
+
+a:active,
+a:hover {
+    outline-width: 0
+}
+
 .navbar ul li .dropdown-menu {
     background-color: #838eef;
     position: absolute;
@@ -124,9 +156,22 @@ a.nav-link {
     display: block;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
     .navbar ul {
-        display: none;
+        display: none !important;
+    }
+
+    .dropdown-menu {
+        display: none !important;
+    }
+
+    .navbar .navbar-brand {
+        color: #fff;
+        text-decoration: none;
+        font-size: 13px;
+        font-weight: bold;
+        line-height: 60px;
+        padding-right: 10px;
     }
 
     .search-bar {
@@ -141,5 +186,121 @@ a.nav-link {
         border-radius: 20px;
         border: none;
         outline: none;
+    }
+}
+
+@media (max-width: 1200px) and (min-width: 801px) {
+    * {
+        font-size: 15px !important;
+    }
+
+    .navbar .navbar-brand {
+        color: #fff;
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: bold;
+        line-height: 60px;
+        padding-right: 10px;
+    }
+
+    .search-bar {
+        width: 50%;
+        margin-left: 20px;
+    }
+
+    .search-bar form input {
+        width: 250px;
+        height: 35px;
+        padding: 0 20px;
+        border-radius: 20px;
+        border: none;
+        outline: none;
+    }
+
+}
+
+/* @media (max-width: 1200px) and (min-width: 801px) {
+
+} */
+.padding-large {
+    padding: 12px 24px !important
+}
+
+.toolbar-button:hover {
+    color: #000 !important;
+    background-color: #ccc !important
+}
+
+.toolbar-button {
+    border: none;
+    display: inline-block;
+    padding: 8px 16px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    background-color: inherit;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap
+}
+
+
+.toolbar-button:disabled {
+    cursor: not-allowed;
+    opacity: 0.3
+}
+
+.bar-block .bar-item {
+    width: 100%;
+    display: block;
+    padding: 8px 16px;
+    text-align: left;
+    border: none;
+    white-space: normal;
+    float: none;
+    outline: 0
+}
+
+.toolbar-top{
+    position: fixed;
+    width: 30%;
+    z-index: 1;
+    right: 0%;
+    top: 10px;
+}
+
+@media (max-width:800px) {
+    .hide-medium {
+        display: none !important
+    }
+}
+
+.toolbar-hide {
+    display: none !important
+}
+
+.toolbar-black {
+    color: #fff !important;
+    background-color: #343a40 !important
+}
+
+.toolbar-bar .toolbar-button {
+    white-space: normal;
+}
+.toolbar-bar:before,
+.toolbar-bar:after {
+    content: "";
+    display: table;
+    clear: both
+}
+.toolbar-show {
+    display: block !important
+}
+
+@media (min-width:800px) {
+
+    .hide-large {
+        display: none !important
     }
 }

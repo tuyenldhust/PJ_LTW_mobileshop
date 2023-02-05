@@ -13,10 +13,10 @@
         <!-- <button class="navbar-toggler" type="button">
           <span class="navbar-toggler-icon"></span>
         </button> -->
-        <div class="" id="navbarNav">
-            <ul>
-                <li><a class="nav-link" href="{{ url('category') }}">Category</a></li>
-                <li><a class="nav-link" href="{{ url('product') }}">Product</a></li>
+        <div id="navbarNav">
+            <ul class="navbarNav">
+                <li><a class="nav-link" href="{{ url('category') }}">Categorys</a></li>
+                <li><a class="nav-link" href="{{ url('product') }}">Products</a></li>
                 <li>
                     <a class="nav-link" href="{{ url('cart') }}">Cart
                         <span class="badge badge-pill bg-primary cart-count">0</span>
@@ -29,17 +29,20 @@
                 @guest
                     @if(Route::has('login'))
                         <li><a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a></li>
-            @endif
+                    @endif
+            </ul>
         </div>
+    </div>
 
 
-        <!-- @if (Route::has('register'))
-            <li class="nav-item">
-              <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+    <!-- @if (Route::has('register'))
+        <li class="nav-item">
+          <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
               </li>
             @endif -->
 
-        @else
+    @else
+        <div>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     {{ Auth::user()->name }}
@@ -67,8 +70,29 @@
 
                 </ul>
             </li>
+        </div>
+
+        @endguest
+        </ul>
+
+        </div>
+        <div id="toolbar" class="bar-block toolbar-black toolbar-hide hide-large hide-medium toolbar-top" style="margin-top:46px">
+            <a href="{{ url('category') }}" class="bar-item toolbar-button padding-large" onclick="myFunction()">Categorys</a>
+            <a href="{{ url('Product') }}" class="bar-item toolbar-button padding-large" onclick="myFunction()">Products</a>
+            <a href="{{ url('cart') }}" class="bar-item toolbar-button padding-large" onclick="myFunction()">Carts</a>
+            <a href="{{ url('wishlist') }}" class="w3-bar-item toolbar-button padding-large" onclick="myFunction()">Wishlist</a>
+            @guest
+                @if(Route::has('login'))
+                    <a href="{{ route('login') }}" class="bar-item toolbar-button padding-large">{{ __('Login') }}</a>
+                @endif
+            @else
+                <a href="{{ url('my-orders') }}" class="bar-item toolbar-button padding-large" onclick="myFunction()">My orders</a>
+                <a href="{{ url('profile') }}" class="bar-item toolbar-button padding-large" onclick="myFunction()">Profile</a>
+                <a class="bar-item toolbar-button padding-large" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                    {{ __('Log out') }}
+                </a>
             @endguest
-            </ul>
-    </div>
-    </div>
+        </div>
+        <a href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu" class="menu_onclick"><i class="fa fa-bars"></i></a>
+
 </nav>
