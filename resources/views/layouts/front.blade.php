@@ -105,7 +105,17 @@
 @yield('scripts')
 
 <script src="{{ asset('frontend/js/custom.js')}}"></script>
+<script>
+    function myFunction() {
+        var x = document.getElementById("toolbar");
+        if (x.className.indexOf("toolbar-show") == -1) {
+            x.className += " toolbar-show";
+        } else {
+            x.className = x.className.replace(" toolbar-show", "");
+        }
+    }
 
+</script>
 @include('layouts.inc.footer')
 </body>
 
