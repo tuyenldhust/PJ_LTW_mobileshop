@@ -4,8 +4,8 @@
 
       Tip 2: you can also add an image using data-image tag
     -->
-    <div class="logo"><a href="http://127.0.0.1:8000/" class="simple-text logo-normal">
-            STORE SMART PHONE
+    <div class="logo"><a href="http://127.0.0.1:8000/" class="simple-text">
+            HOME
         </a></div>
     <div class="sidebar-wrapper">
         <ul class="nav">

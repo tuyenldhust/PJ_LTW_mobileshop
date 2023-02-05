@@ -1,0 +1,36 @@
+
+.logo a {
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-decoration: none;
+}
+
+a.simple-text:hover {
+    color: #d0c0c0;
+}
+
+.nav-item a {
+    display: flex;
+    padding: 10px;
+    color: #333;
+    text-decoration: none;
+    align-items: center;
+    margin: 20px auto;
+
+}
+
+.nav-item a:hover {
+    background-color: #fdf7f7;
+}
+
+ul.nav {
+    list-style: none;
+    background-color: #f0eaea;
+}
+
+.material-icons {
+    margin-right: 5px;
+}

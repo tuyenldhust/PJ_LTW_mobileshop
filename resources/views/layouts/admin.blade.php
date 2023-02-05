@@ -14,38 +14,46 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
 
     <!-- Styles -->
-    <link href="{{ asset('admin/css/custom.css') }}" rel="stylesheet">
-    <link href="{{ asset('admin/css/material-dashboard.css') }}" rel="stylesheet">
+    {{--    <link href="{{ asset('admin/css/custom.css') }}" rel="stylesheet">--}}
+    {{--    <link href="{{ asset('admin/css/material-dashboard.css') }}" rel="stylesheet">--}}
+    <link href="{{ asset('admin/css/sidebar.css') }}" rel="stylesheet">
+    <link href="{{ asset('admin/css/admin_dashboard.css') }}" rel="stylesheet">
+    <link href="{{ asset('admin/css/admin_navbar.css') }}" rel="stylesheet">
+    <link href="{{ asset('admin/css/admin_content.css') }}" rel="stylesheet">
+    <link href="{{ asset('admin/css/admin_footer.css') }}" rel="stylesheet">
+
+
+
 
 </head>
 <body>
 
-    <div class="wrapper">
-        @include('layouts.inc.sidebar')
-        <div class="main-panel">
-            @include('layouts.inc.adminnav')
-            <div class="content">
-                @yield('content');
-            </div>
-            @include('layouts.inc.adminfooter')
+<div class="wrapper">
+    @include('layouts.inc.sidebar')
+    <div class="main-panel">
+        @include('layouts.inc.adminnav')
+        <div class="content">
+            @yield('content');
         </div>
+        @include('layouts.inc.adminfooter')
     </div>
+</div>
 
 
-    !--   Core JS Files   -->
-    <script src="{{ asset('admin/js/jquery.min.js') }}" defer></script>
-    <script src="{{ asset('admin/js/popper.min.js') }}" defer></script>
-    <script src="{{ asset('admin/js/bootstrap-material-design.min.js') }}" defer></script>
-    <script src="{{ asset('admin/js/perfect-scrollbar.jquery.min.js') }}" defer></script>
+!--   Core JS Files   -->
+<script src="{{ asset('admin/js/jquery.min.js') }}" defer></script>
+<script src="{{ asset('admin/js/popper.min.js') }}" defer></script>
+<script src="{{ asset('admin/js/bootstrap-material-design.min.js') }}" defer></script>
+<script src="{{ asset('admin/js/perfect-scrollbar.jquery.min.js') }}" defer></script>
 
-    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-    @if(session('status'))
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+@if(session('status'))
     <script>
         swal("{{ session('status') }}");
     </script>
-    @endif
+@endif
 
-    @yield('scripts');
+@yield('scripts');
 
 </body>
 </html>

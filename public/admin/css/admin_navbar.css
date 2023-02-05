@@ -1,0 +1,153 @@
+.header-navbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 250px;
+    background-color: #e0e4a5;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    padding: 1rem;
+    box-shadow: 0 2px 5px rgb(0 0 0 / 10%);
+    height: 80px;
+}
+
+.nav-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar-brand {
+    font-size: 2rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #c30909;
+    line-height: 80px;
+}
+
+.navbar-nav {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.navbar-toggler {
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-toggler span {
+    display: none;
+}
+
+.navbar-toggler-icon {
+    width: 1.5rem;
+    height: 0.125rem;
+    background: #333;
+    margin: 0 0.5rem;
+    display: block;
+}
+
+@media (min-width: 768px) {
+    .navbar-toggler span {
+        display: inline-block;
+        margin-right: 0.5rem;
+        color: #333;
+        font-size: 1.2rem;
+    }
+}
+
+.collapse.navbar-collapse {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.navbar-form {
+    display: flex;
+    align-items: center;
+}
+
+.form-control {
+    width: 20rem;
+    padding: 0.7rem;
+    border: none;
+    border-radius: 0.25rem;
+    outline: none;
+    position: relative;
+
+}
+
+.btn-round {
+    border-radius: 50%;
+    background-color: white;
+    border: none;
+    padding: 0.3rem;
+    margin-left: -2.6rem;
+    position: absolute;
+}
+
+.btn-round:hover {
+    background-color: lightgray;
+}
+
+.material-icons {
+    font-size: 1.5rem;
+    color: gray;
+}
+
+.header-nav-link {
+    color: #333;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.header-nav-icon {
+    font-size: 1.5rem;
+    margin-right: 0.5rem;
+}
+
+.header-nav-notification {
+    background-color: #333;
+    color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    font-size: 0.75rem;
+    height: 1.5rem;
+    width: 1.5rem;
+    text-align: center;
+}
+
+li.nav-item.person-dropdown {
+    margin: 5px 5px;
+    position: relative;
+}
+
+.person-dropdown .dropdown-menu{
+    display: none;
+    background-color: #60c0d0;
+    position: absolute;
+}
+
+.person-dropdown:hover .dropdown-menu{
+    display: block;
+}
+
+a.dropdown-item {
+    padding: 5px 30px;
+}
+
+a.dropdown-item:hover {
+    background-color: #92e2ec;
+}
+
+
+
