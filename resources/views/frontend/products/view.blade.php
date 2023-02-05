@@ -121,9 +121,9 @@
                         <div class="col-md-9">
                             <br/>
                             @if ($products->qty > 0)
-                                <button type="button" class="btn btn-primary me-3 addToCartBtn float-start">Add to cart <i class="fa fa-shopping-cart"></i></button>
+                                <button type="button" id="addToCartBtn" class="btn btn-primary me-3 addToCartBtn float-start">Add to cart <i class="fa fa-shopping-cart"></i></button>
                             @endif
-                                <button type="button" class="btn btn-success me-3 addToWishlist float-start">Add to wishlist <i class="fa fa-heart"></i></button>
+                                <button type="button" id="addToWishList" class="btn btn-success me-3 addToWishlist float-start">Add to wishlist <i class="fa fa-heart"></i></button>
                         </div>
                     </div>
                 </div>

@@ -27,7 +27,8 @@ h6 {
 }
 
 .card-header h4 {
-    margin-right: 10px;
+    font-size: 20px;
+    color: #f7f1f1;
 }
 
 .btn-primary {
@@ -47,17 +48,13 @@ a.btn-primary:hover {
 
 .card-header a{
     float: right;
+    margin-bottom: 5px;
 }
 
 
 .container {
     width: 80%;
     margin: 0 auto;
-}
-
-.card-header h4 {
-    font-size: 20px;
-    color: #333;
 }
 
 .card {
@@ -71,10 +68,6 @@ a.btn-primary:hover {
 .card-header {
     background-color: #f1f1f1;
     padding: 20px;
-}
-
-.card-header h4 {
-    margin: 0;
 }
 
 .card-body {
