@@ -23,6 +23,9 @@
     <link href="{{ asset('frontend/css/profile_style.css') }}" rel="stylesheet">
     <link href="{{ asset('frontend/css/footer.css') }}" rel="stylesheet">
     <link href="{{ asset('frontend/css/order_index.css') }}" rel="stylesheet">
+    <link href="{{ asset('frontend/css/view-order-detail.css') }}" rel="stylesheet">
+
+
 
 
     {{--  fetch api  --}}
