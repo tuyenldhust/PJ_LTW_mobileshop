@@ -21,6 +21,9 @@
     <link href="{{ asset('admin/css/admin_navbar.css') }}" rel="stylesheet">
     <link href="{{ asset('admin/css/admin_content.css') }}" rel="stylesheet">
     <link href="{{ asset('admin/css/admin_footer.css') }}" rel="stylesheet">
+    <link href="{{ asset('admin/css/index_category.css') }}" rel="stylesheet">
+
+
 
 
 
