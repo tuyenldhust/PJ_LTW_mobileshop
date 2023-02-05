@@ -17,10 +17,11 @@
 }
 
 .card-header {
-    font-size: 20px;
+    font-size: 25px;
     font-weight: bold;
     text-align: center;
     margin-bottom: 20px;
+    color: #161ae1;
 }
 
 .login_input_email, .login_input_password {
