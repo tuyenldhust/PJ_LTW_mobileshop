@@ -64,9 +64,9 @@
 }
 
 .card-footer a {
-    color: #9de872;
+    color: #599e31;
     text-decoration: none;
-    font-weight: bold;
+    font-size: 15px;
 }
 
 .card-footer a:hover {
