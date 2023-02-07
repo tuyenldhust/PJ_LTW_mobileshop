@@ -23,12 +23,7 @@
     <link href="{{ asset('admin/css/admin_footer.css') }}" rel="stylesheet">
     <link href="{{ asset('admin/css/index_category.css') }}" rel="stylesheet">
     <link href="{{ asset('admin/css/category_edit.css') }}" rel="stylesheet">
-
-
-
-
-
-
+    <link href="{{ asset('admin/css/add_category.css') }}" rel="stylesheet">
 
 </head>
 <body>
@@ -38,7 +33,7 @@
     <div class="main-panel">
         @include('layouts.inc.adminnav')
         <div class="content">
-            @yield('content');
+            @yield('content')
         </div>
         @include('layouts.inc.adminfooter')
     </div>
