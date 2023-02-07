@@ -28,6 +28,8 @@ table, th, td {
     border: 1px solid #2a2929;
     border-collapse: collapse;
     height: 70px;
+    padding: 20px;
+    margin: 25px auto 50px;
 }
 
 .cate-image {

@@ -7,11 +7,11 @@
 @section('content')
     <div class="card">
         <div class="card-header">
-            <h4>Product Page</h4>
+            <h3>Product Page</h3>
             <hr>
         </div>
-        <div class="card-body">
-            <table class="table table-bordered table-striped">
+        <div class="product-card-body">
+            <table class="table">
                 <thead>
                     <tr>
                         <th>Id</th>
@@ -35,8 +35,10 @@
                                 <img src="{{ asset('assets/uploads/products/'.$item->image) }}" class="cate-image" alt="Image Here">
                             </td>
                             <td>
-                                <a href="{{ url('edit-product/'.$item->id) }}" class="btn btn-primary btn-sm">Edit</a>
-                                <a href="{{ url('delete-product/'.$item->id) }}" class="btn btn-danger btn-sm">Delete</a>
+                                <div class="btn-group">
+                                    <a href="{{ url('edit-product/'.$item->id) }}" class="cate-btn btn-primary">Edit</a>
+                                    <a href="{{ url('delete-product/'.$item->id) }}" class="cate-btn btn-danger">Delete</a>
+                                </div>
                             </td>
                         </tr>
                     @endforeach

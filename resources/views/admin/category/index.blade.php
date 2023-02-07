@@ -30,9 +30,11 @@
                             <td>
                                 <img src="{{ asset('assets/uploads/category/'.$item -> image) }}" class="cate-image" alt="Image Here">
                             </td>
-                            <td class="btn-group">
-                                <a href="{{ url('edit-category/'.$item -> id)}}" class="cate-btn btn-primary">Edit</a>
-                                <a href="{{ url('delete-category/'.$item -> id) }}" class="cate-btn btn-danger">Delete</a>
+                            <td>
+                                <div class="btn-group">
+                                    <a href="{{ url('edit-category/'.$item -> id)}}" class="cate-btn btn-primary">Edit</a>
+                                    <a href="{{ url('delete-category/'.$item -> id) }}" class="cate-btn btn-danger">Delete</a>
+                                </div>
                             </td>
                         </tr>
                     @endforeach
