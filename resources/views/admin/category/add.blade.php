@@ -5,53 +5,52 @@
 @endsection
 
 @section('content')
-    <div class="card">
-        <div class="card-header">
+    <div class=" card category-card">
+        <div class="card-header category-card-header">
             <h4>Add category</h4>
         </div>
-        <div class="card-body">
+        <div class="car-body category-card-body">
             <form action ="{{ url('insert-category') }}" method = "POST" enctype="multipart/form-data">
                 @csrf
                 @method('PUT')
-                <div class="row">
-                    <div class="col-md-6">
+                <div class="category-field">
+                    <div class="input-category-field">
                         <label for="">Name</label>
-                        <input type="text" class="form-control" name="name">
+                        <input type="text" class="text-form-control" name="name">
                     </div>
-                    <div class="col-md-6">
+                    <div class="input-category-field">
                         <label for=""> Slug</label>
-                        <input type="text" class="form-control" name="slug">
+                        <input type="text" class="text-form-control" name="slug">
                     </div>
-                    <div class="col-md-12">
+                    <div class="input-category-field">
                         <label for="">Description</label>
-                        <textarea name="description" rows="3" class="form-control"></textarea>
+                        <textarea name="description" rows="3" class="textarea-form-control"></textarea>
                     </div>
-                    <div class="col-md-6 mb-3">
+                    <div class="checkbox-gr">
                         <label for="">Status</label >
-                        <input type="checkbox" name="status">
+                        <input class="checkbox-form" type="checkbox" name="status">
                     </div>
-                    <div class="col-md-6 mb-3">
+                    <div class="checkbox-gr">
                         <label for=""> Popular</label>
-                        <input type="checkbox" name="popular">
+                        <input class="checkbox-form" type="checkbox" name="popular">
                     </div>
-                    <div class="col-md-12 mb-3">
+                    <div class="input-category-field">
                         <label for="">Meta Title</label>
-                        <input type="text" class="form-control" name="meta_title">
+                        <input type="text" class="text-form-control" name="meta_title">
                     </div>
-                    <div class="col-md-12 mb-3">
+                    <div class="input-category-field">
                         <label for=""> Meta Keywords </label>
-                        <textarea name="meta_keywords" rows="3" class="form-control"></textarea>
+                        <textarea name="meta_keywords" rows="3" class="textarea-form-control"></textarea>
                     </div>
-                    <div class="col-md-12 mb-3">
+                    <div class="input-category-field">
                         <label for="">Meta Description </label>
-                        <textarea name="meta_description" rows="3" class="form-control"></textarea>
+                        <textarea name="meta_description" rows="3" class="text-form-control"></textarea>
                     </div>
-                    <div class="col-md-12 mb-3">
-                    <input type="file" name="image" class="form-control">
+                    <div class="img_btn">
+                        <input type="file" name="image" class="img-form-control">
+                        <button type="submit" class="category-summit-btn">Submit</button>
                     </div>
-                    <div class="col-md-12">
-                        <button type="submit" class="btn btn-primary">Submit</button>
-                    </div>
+
                 </div>
             </form>
         </div>
