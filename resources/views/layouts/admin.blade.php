@@ -24,6 +24,9 @@
     <link href="{{ asset('admin/css/index_category.css') }}" rel="stylesheet">
     <link href="{{ asset('admin/css/category_edit.css') }}" rel="stylesheet">
     <link href="{{ asset('admin/css/add_category.css') }}" rel="stylesheet">
+    <link href="{{ asset('admin/css/add_product.css') }}" rel="stylesheet">
+    <link href="{{ asset('admin/css/edit-product.css') }}" rel="stylesheet">
+
 
 </head>
 <body>

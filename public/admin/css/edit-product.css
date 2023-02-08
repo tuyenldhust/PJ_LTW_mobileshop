@@ -1,0 +1,47 @@
+
+.product-field {
+    display: flex;
+    /*justify-content: space-around;*/
+}
+
+.product-field label {
+    min-width: 200px;
+    text-align: center;
+}
+
+select.form-select {
+    margin: 0 auto;
+}
+
+.input-field {
+    width: 500px;
+    margin: 0 auto;
+}
+
+.image-div-center {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    justify-items: center;
+    margin: 0 auto;
+    width: 500px;
+}
+
+.image-div-center img {
+    width: 400px;
+    margin: 0 auto;
+}
+
+.image-center {
+    margin: 0 auto;
+}
+
+.input-field input {
+    width: 500px;
+}
+
+.btn-submit {
+    width: 50px;
+    margin: 20px auto 50px;
+}
+
