@@ -24,6 +24,7 @@
     <link href="{{ asset('frontend/css/footer.css') }}" rel="stylesheet">
     <link href="{{ asset('frontend/css/order_index.css') }}" rel="stylesheet">
     <link href="{{ asset('frontend/css/view-order-detail.css') }}" rel="stylesheet">
+    <link href="{{ asset('frontend/css/view_cart_home.css') }}" rel="stylesheet">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -42,20 +43,20 @@
 
 <body>
 
-@include('layouts.inc.frontnavbar')
-<div class="content">
-    @yield('content')
-</div>
+    @include('layouts.inc.frontnavbar')
+    <div class="content">
+        @yield('content')
+    </div>
 
-<div class="whatapp-chat">
+    <div class="whatapp-chat">
         <img src="{{ asset('assets/images/test.png') }}" alt="whatapp-logo" heigth="60px" width="60px">
-    </a>
-</div>
+        </a>
+    </div>
 
 
 
-<!--Start of Tawk.to Script-->
-<!-- <script type="text/javascript">
+    <!--Start of Tawk.to Script-->
+    <!-- <script type="text/javascript">
     var Tawk_API = Tawk_API || {},
         Tawk_LoadStart = new Date();
     (function() {
@@ -68,55 +69,54 @@
         s0.parentNode.insertBefore(s1, s0);
     })();
 </script> -->
-<!--End of Tawk.to Script-->
+    <!--End of Tawk.to Script-->
 
-<script>
-    var availableTags = [];
+    <script>
+        var availableTags = [];
 
-    fetch('/product-list')
-        .then(response => response.json())
-        .then(data => {
-            console.log(data);
-            startAutoComplete(data);
-        });
-
-    function startAutoComplete(availableTags) {
-        const searchProduct = document.getElementById("search_product");
-        searchProduct.setAttribute("autocomplete", "off");
-
-        const source = [];
-        searchProduct.addEventListener("input", function() {
-            const searchValue = this.value;
-            const suggestions = availableTags.filter(function(tag) {
-                return tag.toLowerCase().indexOf(searchValue.toLowerCase()) > -1;
+        fetch('/product-list')
+            .then(response => response.json())
+            .then(data => {
+                console.log(data);
+                startAutoComplete(data);
             });
-            console.log(suggestions);
-        });
-    }
-</script>
 
-<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-@if(session('status'))
+        function startAutoComplete(availableTags) {
+            const searchProduct = document.getElementById("search_product");
+            searchProduct.setAttribute("autocomplete", "off");
+
+            const source = [];
+            searchProduct.addEventListener("input", function() {
+                const searchValue = this.value;
+                const suggestions = availableTags.filter(function(tag) {
+                    return tag.toLowerCase().indexOf(searchValue.toLowerCase()) > -1;
+                });
+                console.log(suggestions);
+            });
+        }
+    </script>
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    @if(session('status'))
     <script>
         swal("{{ session('status') }}");
     </script>
-@endif
-<script src="https://kit.fontawesome.com/f1f646c5e0.js" crossorigin="anonymous"></script>
-@yield('scripts')
+    @endif
+    <script src="https://kit.fontawesome.com/f1f646c5e0.js" crossorigin="anonymous"></script>
+    @yield('scripts')
 
-<script src="{{ asset('frontend/js/custom.js')}}"></script>
-<script>
-    function myFunction() {
-        var x = document.getElementById("toolbar");
-        if (x.className.indexOf("toolbar-show") == -1) {
-            x.className += " toolbar-show";
-        } else {
-            x.className = x.className.replace(" toolbar-show", "");
+    <script src="{{ asset('frontend/js/custom.js')}}"></script>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("toolbar");
+            if (x.className.indexOf("toolbar-show") == -1) {
+                x.className += " toolbar-show";
+            } else {
+                x.className = x.className.replace(" toolbar-show", "");
+            }
         }
-    }
-
-</script>
-@include('layouts.inc.footer')
+    </script>
+    @include('layouts.inc.footer')
 </body>
 
 </html>
