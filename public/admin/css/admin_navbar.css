@@ -28,6 +28,10 @@
     line-height: 80px;
 }
 
+a.navbar-brand:hover {
+    color: #e34343;
+}
+
 .navbar-nav {
     display: flex;
     align-items: center;
@@ -149,6 +153,3 @@ a.dropdown-item {
 a.dropdown-item:hover {
     background-color: #92e2ec;
 }
-
-
-

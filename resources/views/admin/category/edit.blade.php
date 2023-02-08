@@ -44,15 +44,15 @@
                         <label class="product-field-label" for="">Meta Description </label>
                         <textarea name="meta_description" rows="3" class="form-control">{{ $category->meta_descrip }}</textarea>
                     </div>
-                    <div class="image-center">
+                    <div class="image-div-center">
                         @if ($category -> image)
-                            <img class="img_category" src="{{ asset('assets/uploads/category/'.$category->image) }}" alt="Category image">
+                            <img src="{{ asset('assets/uploads/category/'.$category->image) }}" alt="Category image">
                         @endif
-                        <div class="img-container">
-                            <input type="file" name="image" class="form-control">
+                        <div class="input-field">
+                            <input type="file" name="image">
                         </div>
-                        <div class="submit-btn">
-                            <button type="submit " class="btn-primary">Submit</button>
+                        <div class="btn-submit">
+                            <button type="submit " class="cate-btn btn-primary">Submit</button>
                         </div>
                     </div>
                 </div>
