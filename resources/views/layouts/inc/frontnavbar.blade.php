@@ -78,7 +78,7 @@
         </div>
         <div id="toolbar" class="bar-block toolbar-black toolbar-hide hide-large hide-medium toolbar-top" style="margin-top:46px">
             <a href="{{ url('category') }}" class="bar-item toolbar-button padding-large" onclick="myFunction()">Categorys</a>
-            <a href="{{ url('product') }}" class="bar-item toolbar-button padding-large" onclick="myFunction()">Products</a>
+            <a href="{{ url('Product') }}" class="bar-item toolbar-button padding-large" onclick="myFunction()">Products</a>
             <a href="{{ url('cart') }}" class="bar-item toolbar-button padding-large" onclick="myFunction()">Carts</a>
             <a href="{{ url('wishlist') }}" class="w3-bar-item toolbar-button padding-large" onclick="myFunction()">Wishlist</a>
             @guest
