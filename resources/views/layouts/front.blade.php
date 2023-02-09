@@ -25,6 +25,7 @@
     <link href="{{ asset('frontend/css/order_index.css') }}" rel="stylesheet">
     <link href="{{ asset('frontend/css/view-order-detail.css') }}" rel="stylesheet">
     <link href="{{ asset('frontend/css/view_cart_home.css') }}" rel="stylesheet">
+    <link href="{{ asset('frontend/css/product_view.css') }}" rel="stylesheet">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
