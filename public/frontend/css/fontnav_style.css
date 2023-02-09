@@ -31,15 +31,21 @@
     }
 }
 
+li.nav-item.dropdown {
+    inline-size: max-content;
+}
+
 .menu_onclick {
     position: absolute;
     right: 20px !important;
     top: 20px !important;
     font-size: 18px;
 }
+
 .fa-bars {
     color: white;
 }
+
 .container {
     width: 100%;
     display: flex;
@@ -263,7 +269,7 @@ a:hover {
     outline: 0
 }
 
-.toolbar-top{
+.toolbar-top {
     position: fixed;
     width: 30%;
     z-index: 1;
@@ -289,12 +295,14 @@ a:hover {
 .toolbar-bar .toolbar-button {
     white-space: normal;
 }
+
 .toolbar-bar:before,
 .toolbar-bar:after {
     content: "";
     display: table;
     clear: both
 }
+
 .toolbar-show {
     display: block !important
 }
