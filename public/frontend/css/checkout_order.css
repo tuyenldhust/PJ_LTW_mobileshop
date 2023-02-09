@@ -1,0 +1,118 @@
+.container_checkout {
+    width: 45%;
+    margin: 10px auto;
+}
+
+.checkout-form {
+    margin-top: 20px;
+}
+
+.checkout-form label {
+    font-weight: bold;
+}
+
+.card-body_checkout {
+    padding: 20px;
+    background-color: #fcf0cf;
+}
+
+.checkout-form div .form-control {
+    padding: 10px;
+    width: 100%;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.card_checkout {
+    box-shadow: 0px 0px 10px #ccc;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.card_checkout h6 {
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.card_checkout h6 hr {
+    border-top: 1px solid #ccc;
+}
+
+.card_checkout .card-body_checkout button {
+    margin-top: 10px;
+    /* text-align: center; */
+    background-color: #609EA2;
+    border-width: 1px;
+    padding-inline: 2px;
+}
+
+.card_checkout .card-body_checkout button:hover {
+    background-color: #6096B4;
+}
+
+.card_checkout table tbody tr {
+    background-color: #fff !important;
+}
+
+/* css cho phần wishlist */
+
+.container_wishlist {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.wishlistitems {
+    width: 80%;
+    max-width: 800px;
+    padding: 20px;
+}
+
+.product_data_wishlist {
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.product_data_wishlist img {
+    width: 70px;
+    height: 70px;
+    border-radius: 10px;
+}
+
+.addToCartBtn,
+.remove-wishlist-item {
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.product_data_wishlist .addToCartBtn {
+    background-color: #28a745;
+    color: #fff;
+}
+
+.product_data_wishlist .addToCartBtn:hover {
+    background-color: #218838;
+}
+
+.product_data_wishlist .remove-wishlist-item {
+    background-color: #dc3545;
+    color: #fff;
+    margin-left: 20px;
+}
+
+.product_data_wishlist .remove-wishlist-item:hover {
+    background-color: #c82333;
+}
+
+.product_data_wishlist h6 {
+    margin: 2px;
+    margin-left: 10px;
+}
+
+.product_data_wishlist .out_stock {
+    margin-left: 20px;
+    margin-right: 20px;
+}
