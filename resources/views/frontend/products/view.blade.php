@@ -116,7 +116,7 @@
                                     <div class="rating-css">
                                         <div class="star-icon">
                                             @if($user_rating)
-                                            @for($i =1; $i<= $user_rating->stars_rated; $i++)
+                                                @for($i =1; $i<= $user_rating->stars_rated; $i++)
                                                 <input type="radio" value="{{$i}}" name="product_rating" checked
                                                     id="rating{{$i}}">
                                                 <label for="rating{{$i}}" class="fa fa-star"></label>
@@ -124,8 +124,8 @@
                                                 @for($j = $user_rating->stars_rated+1; $j<= 5; $j++) <input type="radio"
                                                     value="{{$j}}" name="product_rating" id="rating{{$j}}">
                                                     <label for="rating{{$j}}" class="fa fa-star"></label>
-                                                    @endfor
-                                                    @else
+                                                @endfor
+                                            @else
                                                     <input type="radio" value="1" name="product_rating" checked
                                                         id="rating1">
                                                     <label for="rating1"><i class="fa-solid fa-star"
@@ -142,7 +142,7 @@
                                                     <input type="radio" value="5" name="product_rating" id="rating5">
                                                     <label for="rating5"><i class="fa-solid fa-star"
                                                             style="font-size :35px"></i></label>
-                                                    @endif
+                                            @endif
                                         </div>
                                     </div>
                                 </div>
