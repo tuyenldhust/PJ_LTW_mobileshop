@@ -1,6 +1,5 @@
 .top{
     margin-top: 100px;
-  
   }
 
   .rating-modal{
@@ -52,7 +51,7 @@
     color: rgb(112, 111, 111);
   }
   .add-to-cart{
-    width: 150px;
+    width: 160px;
     font-size: 18px;
     padding: 10px;
     background-color: rgb(243, 85, 11);
