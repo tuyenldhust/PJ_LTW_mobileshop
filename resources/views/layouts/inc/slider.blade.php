@@ -24,17 +24,17 @@
 
     <!-- Automatic Slideshow Images -->
     <div class="mySlides display-container center">
-        <img src="{{ asset('assets/images/bia1.png') }}" style="width:100%">
+        <img src="{{ asset('assets/images/bia1.png') }}" style="width:100%; height: 450px">
         <div class="display-bottommiddle container space hide-small">
         </div>
     </div>
     <div class="mySlides display-container center">
-        <img src="{{ asset('assets/images/bia2.png') }}" style="width:100%">
+        <img src="{{ asset('assets/images/bia2.png') }}" style="width:100%; height: 450px">
         <div class="display-bottommiddle container space hide-small">
         </div>
     </div>
     <div class="mySlides display-container center">
-        <img src="{{ asset('assets/images/bia3.png') }}" style="width:100%">
+        <img src="{{ asset('assets/images/bia3.png') }}" style="width:100%; height: 450px">
         <div class="display-bottommiddle container space hide-small">
         </div>
     </div>
