@@ -19,7 +19,7 @@
                 </h6>
                 <div class="products">
                     @foreach ($featured_products as $prod)
-                        <div class="item">
+                        <div class="item item-index-home" style="box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);">
                             <a href="{{ url('view-category/'.$prod->category->slug.'/'.$prod->slug)}}">
                                 <div >
                                     <img src="{{ asset('assets/uploads/products/'.$prod->image)}}"  alt="Product image">
@@ -50,7 +50,7 @@
                     @foreach ($trending_category as $trencate)
                         <div class="item">
                             <a href="{{ url('view-category/'.$trencate->slug)}}">
-                                <div class="card">
+                                <div class="card-index-home">
                                     <img src="{{ asset('assets/uploads/category/'.$trencate->image)}}"  alt="Category image">
                                     <div>
                                         <h5>{{$trencate->name}}</h5>
