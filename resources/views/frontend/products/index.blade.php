@@ -5,7 +5,7 @@
 @endsection
 
 @section('content')
-    <div class="category_home">
+    <div class="category_home change-space">
         <div class="container">
             <h6>
                 <a href="{{url('/') }}" class="text_home">

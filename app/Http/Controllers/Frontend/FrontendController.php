@@ -71,16 +71,16 @@ class FrontendController extends Controller
 
     }
 
-    public function productlistAjax(){
-        $products = Product::select('name')->where('status', '0')->get();
-        $data = [];
-
-        foreach ($products as $item){
-            $data[] = $item['name'];
-        }
-
-        return $data;
-    }
+//    public function productlistAjax(){
+//        $products = Product::select('name')->where('status', '0')->get();
+//        $data = [];
+//
+//        foreach ($products as $item){
+//            $data[] = $item['name'];
+//        }
+//
+//        return $data;
+//    }
 
     public function searchProduct(Request $request){
         $search_product = $request->product_name;

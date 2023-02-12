@@ -89,6 +89,22 @@ h6 .float-end:hover {
     border-radius:10px;
     padding: 20px;
 }
-.item div{
-    margin: 20px;
+
+.products .item-index-home {
+    flex-basis: 22%;
+    padding-left: 12px;
+    padding-right: 12px;
+    box-sizing: border-box;
+    margin: 7px;
+    padding-bottom: 17px;
+}
+
+.card-index-home {
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+    border-radius: 5px;
+    overflow: hidden;
+    max-width: 100%;
+    padding: 10px;
+    min-height: 370px;
+    margin-top: 10px;
 }
