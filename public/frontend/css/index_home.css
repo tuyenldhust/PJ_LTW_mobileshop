@@ -69,6 +69,7 @@ h6 .float-end:hover {
     padding-right: 7px;
     /*kich thuoc tinh tu ben ngoai border tinh vao*/
     box-sizing: border-box;
+    margin-top: 15px;
 }
 
 .products .item img:hover {
