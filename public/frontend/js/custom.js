@@ -187,7 +187,7 @@ if(document.querySelector('.rating-modal-cancel') != null){
     });
 }
 
-if(document.querySelector('.rating-this-product') != null){
+if(document.querySelector('.rate-this-product') != null){
     document.querySelector('.rate-this-product').addEventListener('click', function (e){
         e.preventDefault();
         document.querySelector('.rating-modal').style.visibility  = 'visible';
@@ -221,10 +221,13 @@ if(document.querySelector('.btn-add-update-review') != null){
                 }
             })
             .then(function (response) {
-                return response;
+                return response.json();
             })
             .then(function (response) {
-                return response;
+                swal(response.status);
+                setTimeout(function(){
+                    window.location.href = response.redirect;
+                }, 2000);
             });
         }
 
@@ -236,10 +239,13 @@ if(document.querySelector('.btn-add-update-review') != null){
                 }
             })
             .then(function (response) {
-                return response;
+                return response.json();
             })
             .then(function (response) {
-                return response;
+                swal(response.status);
+                setTimeout(function(){
+                    window.location.href = response.redirect;
+                }, 2000);
             });
         }
     });

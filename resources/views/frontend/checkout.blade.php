@@ -102,7 +102,7 @@
                                 </table>
                                 <h6>Grand Total <span class="float-end">{{$total}} VND </span></h6>
                                 <hr>
-                                <button type="submit">Place Order | COD</button>
+                                <button type="submit" style="padding: 15px;">Place Order | COD</button>
                             </div>
                         </div>
                     </div>
