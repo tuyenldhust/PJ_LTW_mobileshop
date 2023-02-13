@@ -17,7 +17,7 @@
                         All Product
                     </a>
                 </h6>
-                <div class="products">
+                <div class="products" style="padding-left: 100px;">
                     @foreach ($featured_products as $prod)
                         <div class="item item-index-home" style="box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);">
                             <a href="{{ url('view-category/'.$prod->category->slug.'/'.$prod->slug)}}">
@@ -51,7 +51,7 @@
                         <div class="item">
                             <a href="{{ url('view-category/'.$trencate->slug)}}">
                                 <div class="card-index-home">
-                                    <img src="{{ asset('assets/uploads/category/'.$trencate->image)}}"  alt="Category image">
+                                    <center><img src="{{ asset('assets/uploads/category/'.$trencate->image)}}"  alt="Category image"></center>
                                     <div>
                                         <h5>{{$trencate->name}}</h5>
                                         <p>
