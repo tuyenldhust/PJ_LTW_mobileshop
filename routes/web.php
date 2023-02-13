@@ -17,6 +17,8 @@ use App\Http\Controllers\Frontend\RatingController;
 use App\Http\Controllers\Frontend\ReviewController;
 use App\Http\Controllers\Frontend\UserController;
 use App\Http\Controllers\Frontend\WishlistController;
+use Spatie\Analytics\Period;
+use Spatie\Analytics\AnalyticsFacade as Analytics; //Change here
 
 /*
 |--------------------------------------------------------------------------
@@ -111,3 +113,9 @@ Route::middleware(['auth','isAdmin'])->group(function () {
     Route::get('users', [DashboardController::class, 'users']);
     Route::get('view-user/{id}', [DashboardController::class, 'viewuser']);
 });
+
+Route::get('/analytics', function () {
+
+    $analyticsData = Analytics::fetchVisitorsAndPageViews(Period::days(7));
+    return view('welcome', ['analyticsData' => $analyticsData]);
+}); 
