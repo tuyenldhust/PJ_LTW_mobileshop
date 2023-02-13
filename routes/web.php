@@ -73,9 +73,9 @@ Route::middleware(['auth'])->group(function(){
 
     //Route review
     Route::get('add-review/{product_slug}/userreview', [ReviewController::class, 'add']);
-    Route::post('add-review', [ReviewController::class, 'create']);
+    Route::post('add-review', [ReviewController::class, 'create'])->middleware('filter_bad_words');
     Route::get('edit-review/{product_slug}/userreview', [ReviewController::class, 'edit']);
-    Route::post('update-review', [ReviewController::class, 'update']);
+    Route::post('update-review', [ReviewController::class, 'update'])->middleware('filter_bad_words');
 
     //Route wishlist
     Route::get('wishlist',[WishlistController::class, 'index']);

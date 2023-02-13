@@ -225,9 +225,11 @@ if(document.querySelector('.btn-add-update-review') != null){
             })
             .then(function (response) {
                 swal(response.status);
-                setTimeout(function(){
-                    window.location.href = response.redirect;
-                }, 2000);
+                if(response.redirect != null){
+                    setTimeout(function(){
+                        window.location.href = response.redirect;
+                    }, 2000);
+                }
             });
         }
 
@@ -243,9 +245,11 @@ if(document.querySelector('.btn-add-update-review') != null){
             })
             .then(function (response) {
                 swal(response.status);
-                setTimeout(function(){
-                    window.location.href = response.redirect;
-                }, 2000);
+                if(response.redirect != null){
+                    setTimeout(function(){
+                        window.location.href = response.redirect;
+                    }, 2000);
+                }
             });
         }
     });
