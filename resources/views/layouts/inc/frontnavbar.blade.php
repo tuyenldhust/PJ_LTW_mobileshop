@@ -34,13 +34,6 @@
         </div>
     </div>
 
-
-    <!-- @if (Route::has('register'))
-        <li class="nav-item">
-          <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
-              </li>
-            @endif -->
-
     @else
         <div>
             <li class="nav-item dropdown">
@@ -58,7 +51,7 @@
                             My Profile
                         </a>
                     </li>
-                    <li>
+                    <li style="margin-right: 45px;">
                         <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
                             {{ __('Log out') }}
                         </a>
@@ -80,7 +73,7 @@
             <a href="{{ url('category') }}" class="bar-item toolbar-button padding-large" onclick="myFunction()">Categories</a>
             <a href="{{ url('product') }}" class="bar-item toolbar-button padding-large" onclick="myFunction()">Products</a>
             <a href="{{ url('cart') }}" class="bar-item toolbar-button padding-large" onclick="myFunction()">Cart</a>
-            <a href="{{ url('wishlist') }}" class="w3-bar-item toolbar-button padding-large" onclick="myFunction()">Wishlist</a>
+            <a href="{{ url('wishlist') }}" class="bar-item toolbar-button padding-large" onclick="myFunction()">Wishlist</a>
             @guest
                 @if(Route::has('login'))
                     <a href="{{ route('login') }}" class="bar-item toolbar-button padding-large">{{ __('Login') }}</a>
@@ -88,7 +81,7 @@
             @else
                 <a href="{{ url('my-orders') }}" class="bar-item toolbar-button padding-large" onclick="myFunction()">My orders</a>
                 <a href="{{ url('profile') }}" class="bar-item toolbar-button padding-large" onclick="myFunction()">Profile</a>
-                <a class="bar-item toolbar-button padding-large" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                <a class="bar-item toolbar-button padding-large" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();" style="margin-right: 45px;">
                     {{ __('Log out') }}
                 </a>
             @endguest

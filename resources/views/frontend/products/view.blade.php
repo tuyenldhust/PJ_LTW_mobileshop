@@ -107,10 +107,6 @@
                                     <div>
                                         <h4 class="rating-modal-title fs-5">Rate {{ $products->name }}</h4>
                                     </div>
-                                    <div>
-                                        <button type="button" style="font-size :20px" class="btn-close"
-                                            data-bs-dismiss="modal" aria-label="Close">&times;</button>
-                                    </div>
                                 </div>
                                 <div class="rating-modal-body">
                                     <div class="rating-css">
@@ -168,7 +164,7 @@
             <div class="review margin-bottom">
                 <div>
                     @foreach ($reviews as $item)
-                    <div class="user-review">
+                    <div style="border: #6298ce 1px solid;padding: 7px;margin: 5px;">
                         <label for="">{{ $item->user->name .' '.$item->user->lname }}</label>
                         @if($item->user_id == Auth::id())
                         <a href="{{ url('edit-review/'.$products->slug.'/userreview') }}">edit</a>
@@ -193,8 +189,8 @@
                     @endforeach
                 </div>
                 <div class="review-private">
-                    <div class="rade-this-product">
-                        <button class="rade-this-product btn btn-primary" type="button" data-bs-toggle="modal"
+                    <div class="rate-this-product">
+                        <button class="rate-this-product btn btn-primary" type="button" data-bs-toggle="modal"
                             data-bs-target="#exampleModal">
                             Rate this product
                         </button>

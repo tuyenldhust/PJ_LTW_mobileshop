@@ -17,12 +17,12 @@
                                 </div>
                             </div>
                             <div class="form-text margin-top">
-                                <form class="form-body" action="{{ url('/add-review') }}" method="POST">
+                                <div class="form-body">
                                 @csrf
-                                    <input type="hidden" name="product_id" value="{{ $product->id }}">
+                                    <input type="hidden" name="product_id" value="{{ $product->id }}" class="product_id">
                                     <textarea class="form-control form-review" name="user_review" rows="5" placeholder="Please leave a review"></textarea>
-                                    <button type="submit" class="btn-submit">Submit Review</button>
-                                </form>
+                                    <button type="submit" class="btn-submit btn-add-update-review"><font color="white"><b>Submit Review</b></font></button>
+                                </div>
                             </div>
                            
                         @else

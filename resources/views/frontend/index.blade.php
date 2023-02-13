@@ -1,4 +1,3 @@
-
 @extends('layouts.front')
 
 @section('title')
@@ -25,8 +24,8 @@
                                     <a href="{{ url('view-category/'.$prod->category->slug.'/'.$prod->slug)}}">
                                             <img src="{{ asset('assets/uploads/products/'.$prod->image)}}"  alt="Product image">
                                             <h5 style="display: -webkit-box; -webkit-line-clamp: 1; -webkit-box-orient: vertical; overflow: hidden;padding-top: 10px;">{{$prod->name}}</h5>
-                                            <small class="float-start"><s>{{$prod->original_price}}₫</s></small>
-                                            <h5 class="float-end">{{$prod->selling_price}}₫</h5>
+                                            <small class="float-start"><s>{{$prod->original_price}}</s></small>
+                                            <h5 class="float-end">{{ $prod->selling_price }}</h5>
                                     </a>
                                 </div>
                             </div>

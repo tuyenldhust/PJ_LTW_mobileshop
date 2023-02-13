@@ -179,3 +179,68 @@ if (document.querySelector('.addToWishlist') != null) {
         });  
     });
 }
+
+if(document.querySelector('.rating-modal-cancel') != null){
+    document.querySelector('.rating-modal-cancel').addEventListener('click', function (e){
+        e.preventDefault();
+        document.querySelector('.rating-modal').style.visibility  = 'hidden';
+    });
+}
+
+if(document.querySelector('.rating-this-product') != null){
+    document.querySelector('.rate-this-product').addEventListener('click', function (e){
+        e.preventDefault();
+        document.querySelector('.rating-modal').style.visibility  = 'visible';
+    });
+}
+
+if(document.querySelector('.btn-add-update-review') != null){
+    document.querySelector('.btn-add-update-review').addEventListener('click', function (e){
+        var product_id, review_id, form_review;
+        if(document.querySelector('.product_id') != null){
+            product_id = document.querySelector('.product_id').value;
+        }
+
+        if(document.querySelector('.review_id') != null){
+            review_id = document.querySelector('.review_id').value;
+        }
+
+        if(document.querySelector('.form-review') != null){
+            form_review = document.querySelector('.form-review').value;
+            if(form_review == null || form_review == ""){
+                swal("Please enter your review");
+                return;
+            }
+        }
+
+        if(product_id != null){
+            fetch('/add-review?product_id='+product_id+'&user_review='+form_review, {
+                method: 'POST',
+                headers: {
+                    'X-CSRF-TOKEN': csrf_token
+                }
+            })
+            .then(function (response) {
+                return response;
+            })
+            .then(function (response) {
+                return response;
+            });
+        }
+
+        if(review_id != null){
+            fetch('/update-review?review_id='+review_id+'&user_review='+form_review, {
+                method: 'POST',
+                headers: {
+                    'X-CSRF-TOKEN': csrf_token
+                }
+            })
+            .then(function (response) {
+                return response;
+            })
+            .then(function (response) {
+                return response;
+            });
+        }
+    });
+}
